@@ -1,0 +1,45 @@
+image: node:16.13.0
+stages:
+  - build
+  - deploy
+build:
+  stage: build
+  only:
+    refs:
+      - master
+  before_script:
+    - apt-get update
+    - apt-get install nodejs -y
+    - npm i --silent
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npm i --silent
+    - npm run build
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - .nuxt
+      - static
+      - package.json
+deploy:
+  stage: deploy
+  only:
+    refs:
+      - master
+  before_script:
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 700 ~/.ssh/id_rsa
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+    - ssh-keyscan 217.107.34.224 >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - apt-get update -y
+    - apt-get install rsync -y
+  script:
+    - ssh -t root@217.107.34.224 "pm2 delete Webzlodimir"
+    - rsync -e "ssh -i ~/.ssh/id_rsa" -rav -O --include-from="rsync.lst" --no-perms --delete . root@217.107.34.224:/var/www/webzlodimir.ru
+    - ssh -t root@217.107.34.224 "cd /var/www/webzlodimir.ru && npm i --silent && pm2 start npm --name Webzlodimir -- start"
