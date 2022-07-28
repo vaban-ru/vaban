@@ -8,7 +8,7 @@
       >Работы</nuxt-link
     >
     <nuxt-link title="Работы" class="header-nav__link" to="/pets"
-      >Домашние проекты</nuxt-link
+      >Open Source</nuxt-link
     >
     <nuxt-link title="Статьи" class="header-nav__link" to="/articles"
       >Статьи</nuxt-link

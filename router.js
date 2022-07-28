@@ -15,7 +15,8 @@ const PageAbout = () => import('@/pages/PageAbout').then((m) => m.default || m)
 
 const PagePets = () => import('@/pages/PagePets').then((m) => m.default || m)
 
-const PageHobby = () => import('@/pages/PageHobby').then((m) => m.default || m)
+const PageWishlist = () =>
+  import('~/pages/PageWishlist').then((m) => m.default || m)
 
 Vue.use(Router)
 
@@ -54,9 +55,9 @@ export function createRouter() {
         component: PagePets
       },
       {
-        path: '/hobby',
-        name: 'hobby',
-        component: PageHobby
+        path: '/wishlist',
+        name: 'wishlist',
+        component: PageWishlist
       }
     ],
     scrollBehavior(to, from, savedPosition) {
