@@ -23,6 +23,12 @@ import { onMounted } from "vue";
 
 const worksItems = [
   {
+    link: "https://norvikbank.ru/",
+    id: 28,
+    title: "Норвик Банк",
+    desc: ["nuxt", "vuejs"],
+  },
+  {
     link: "https://event.top/",
     id: 22,
     title: "Event Top",

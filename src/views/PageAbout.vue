@@ -33,8 +33,15 @@
           >Норвик Банк (Swift X)</a
         >
       </p>
+      <p>
+        Автор крупнейшего русскоязычного Telegram-канала о Vue.js
+        <a target="_blank" rel="noopener" href="https://t.me/stuffy_vuejs"
+          >Душный Вуй</a
+        >
+      </p>
+      <h2>Профессиональные навыки</h2>
       <div class="about__exp">
-        <h2>Технологии (Frontend)</h2>
+        <h2>Frontend</h2>
         <ul>
           <li>Большой опыт в верстке HTML5, CSS3;</li>
           <li>Большой опыт работы с препроцессорами LESS, SASS;</li>
@@ -54,7 +61,7 @@
       </div>
 
       <div class="about__exp">
-        <h2>Технологии (Backend)</h2>
+        <h2>Backend</h2>
         <ul>
           <li>На базовом уровне владею PHP, MySQL, шаблонизатором Smarty;</li>
           <li>Знаком с основами NodeJs;</li>
@@ -106,7 +113,8 @@ import { computed, onMounted } from "vue";
 
 const age = computed(() => {
   return Math.floor(
-    (new Date().getTime() - new Date("1991-08-03")) /
+    ((new Date().getTime() as number) -
+      (new Date("1991-08-03") as unknown as number)) /
       (24 * 3600 * 365.25 * 1000)
   );
 });

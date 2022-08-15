@@ -148,25 +148,6 @@
               >
             </li>
           </ul>
-          <base-subtitle tag="h3"> Книги </base-subtitle>
-          <ul>
-            <li>
-              <a
-                href="https://www.chookandgeek.ru/product/varkraft-hroniki-entsiklopediya-2"
-                rel="noopener"
-                target="_blank"
-                >Варкрафт: Хроники. Энциклопедия. Том 2</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.chookandgeek.ru/product/varkraft-hroniki-entsiklopediya-tom-3"
-                rel="noopener"
-                target="_blank"
-                >Варкрафт: Хроники. Энциклопедия. Том 3</a
-              >
-            </li>
-          </ul>
         </div>
       </div>
     </base-container>

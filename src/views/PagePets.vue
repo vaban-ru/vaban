@@ -24,6 +24,24 @@ const petsList = [
     title: "Vue Bottom Sheet",
     desc: ["vuejs"],
   },
+  {
+    link: "https://github.com/NorvikIT/nuxt-utm-adder",
+    id: 25,
+    title: "Nuxt UTM Adder",
+    desc: ["vuejs", "nuxt"],
+  },
+  {
+    link: "https://github.com/NorvikIT/utm-aska",
+    id: 26,
+    title: "UTM Aska",
+    desc: ["js"],
+  },
+  {
+    link: "https://github.com/NorvikIT/vue-cookies-consent",
+    id: 27,
+    title: "Vue Cookies Consent",
+    desc: ["vue.js"],
+  },
 ];
 
 onMounted(() => {
