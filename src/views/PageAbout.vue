@@ -34,7 +34,7 @@
         >
       </p>
       <p>
-        Автор крупнейшего русскоязычного Telegram-канала о Vue.js
+        Автор русскоязычного Telegram-канала о Vue.js
         <a target="_blank" rel="noopener" href="https://t.me/stuffy_vuejs"
           >Душный Вуй</a
         >

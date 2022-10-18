@@ -48,38 +48,6 @@
             </li>
             <li>
               <a
-                href="https://www.mosigra.ru/Face/Show/karkasson_kupcy_i_zodchie/"
-                rel="noopener"
-                target="_blank"
-                >Каркассон. Купцы и зодчие</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.mosigra.ru/Face/Show/karkasson_princessa_i_drakon/"
-                rel="noopener"
-                target="_blank"
-                >Каркассон. Принцесса и дракон</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.mosigra.ru/Face/Show/karkasson_mosty_zamki_bazary/"
-                rel="noopener"
-                target="_blank"
-                >Каркассон. Мосты, замки и базары</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.mosigra.ru/karkasson-graf-korol-i-kult/"
-                rel="noopener"
-                target="_blank"
-                >Каркассон. Граф, король и культ</a
-              >
-            </li>
-            <li>
-              <a
                 href="https://www.mosigra.ru/kotiki/"
                 rel="noopener"
                 target="_blank"
@@ -92,14 +60,6 @@
                 rel="noopener"
                 target="_blank"
                 >7 чудес
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.mosigra.ru/Face/Show/catan/"
-                rel="noopener"
-                target="_blank"
-                >Колонизаторы
               </a>
             </li>
             <li>
@@ -133,18 +93,21 @@
             </li>
             <li>
               <a
-                href="https://www.chitai-gorod.ru/catalog/book/814270"
-                rel="noopener"
-                target="_blank"
-                >The Sandman. Песочный человек</a
-              >
-            </li>
-            <li>
-              <a
                 href="https://book24.ru/product/transmetropoliten-kn-1-snova-v-gorode-zhazhda-zhizni-5805415/"
                 rel="noopener"
                 target="_blank"
                 >Трансметрополитен</a
+              >
+            </li>
+          </ul>
+          <base-subtitle tag="h3"> Всякое разное</base-subtitle>
+          <ul>
+            <li>
+              <a
+                href="https://market.yandex.ru/product--umnaia-kolonka-yandex-stantsiia-lait/962050067?cpa=1"
+                rel="noopener"
+                target="_blank"
+                >Яндекс Станция Лайт</a
               >
             </li>
           </ul>
