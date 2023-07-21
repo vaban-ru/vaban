@@ -3,24 +3,15 @@
     <base-container>
       <base-title>Контакты</base-title>
       <p class="contacts__paragraph">
-        <span>Основной телефон</span>
+        <span>Телефон</span>
         <a rel="noopener" class="contacts__link" href="tel:+79017304970"
           >+7 901 730-49-70</a
         >
       </p>
       <p class="contacts__paragraph">
-        <span>Запасной телефон</span>
-        <a rel="noopener" class="contacts__link" href="tel:+79198563826"
-          >+7 919 856-38-26</a
-        >
-      </p>
-      <p class="contacts__paragraph">
         <span>E-mail</span>
-        <a
-          rel="noopener"
-          class="contacts__link"
-          href="mailto:hello@webzlodimir.ru"
-          >hello@webzlodimir.ru</a
+        <a rel="noopener" class="contacts__link" href="mailto:79017304970@ya.ru"
+          >79017304970@ya.ru</a
         >
       </p>
       <p class="contacts__paragraph">
@@ -55,8 +46,8 @@ const links = [
     url: "https://github.com/vaban-ru",
   },
   {
-    title: "Gitlab",
-    url: "https://gitlab.com/vaban-ru",
+    title: "Linkedin",
+    url: "https://www.linkedin.com/in/vaban/",
   },
   {
     title: "Telegram",

@@ -34,11 +34,6 @@ const router = createRouter({
       component: () => import("../views/PagePets.vue"),
     },
     {
-      path: "/wishlist",
-      name: "wishlist",
-      component: () => import("../views/PageWishlist.vue"),
-    },
-    {
       path: "/:pathMatch(.*)*",
       name: "not-found",
       component: () => import("../views/PageNotFound.vue"),

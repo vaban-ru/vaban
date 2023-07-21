@@ -3,7 +3,7 @@
     <base-container>
       <base-hero>
         <h1>Владимир Бандуристов</h1>
-        <h2>Frontend Developer</h2>
+        <h2>Frontend Lead</h2>
         <base-icon-list />
       </base-hero>
     </base-container>
@@ -18,7 +18,7 @@ import BaseIconList from "@/components/ui/icons/BaseIconList.vue";
 import { onMounted } from "vue";
 
 onMounted(() => {
-  document.title = "Владимир Бандуристов - Frontend Developer";
+  document.title = "Владимир Бандуристов - Frontend Lead";
 });
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <base-page class="about">
     <base-container>
-      <base-title> Обо мне </base-title>
+      <base-title> Обо мне</base-title>
       <p>
         Привет, меня зовут Владимир Бандуристов. Мне {{ age }}, живу в Москве,
         разрабатываю фронтенд в <br />
@@ -29,9 +29,15 @@
           >Webit</a
         >
         →
-        <a target="_blank" rel="noopener" href="https://norvikbank.ru/"
-          >Норвик Банк (Swift X)</a
+        <a
+          class="disabled"
+          target="_blank"
+          rel="noopener"
+          href="https://norvikbank.ru/"
+          >Норвик Банк</a
         >
+        →
+        <a target="_blank" rel="noopener" href="https://swiftx.ru/">Swift X</a>
       </p>
       <p>
         Автор русскоязычного Telegram-канала о Vue.js
@@ -39,22 +45,29 @@
           >Душный Вуй</a
         >
       </p>
-      <h2>Профессиональные навыки</h2>
       <div class="about__exp">
         <h2>Frontend</h2>
         <ul>
           <li>
-            Хорошо владею Vue,js 2, чуть хуже Vue.js 3, Vuex, Nuxt, имею большой
+            Хорошо владею Vue,js 2,Vue.js 3, Composition API, чуть хуже TS, имею
             опыт в коммерческой разработке (3+ лет);
           </li>
           <li>
-            Большой опыт в коммерческой кросс-браузерной и адаптивной верстке
+            Хорошо владею экосистемой Vue.js: Vuex, Pinia, Nuxt 2/3, имею опыт в
+            коммерческой разработке (3+ лет);
+          </li>
+          <li>
+            Имею опыт в сборке Vue.js плагинов и дальнейшей публикации их в NPM
+            как общий, так и локальный в Github/Gitlab;
+          </li>
+          <li>
+            Большой опыт в коммерческой кроссбраузерной и адаптивной верстке
             HTML, CSS (8+ лет);
           </li>
-          <li>Большой опыт работы с препроцессорами LESS, SASS (5+ лет);</li>
+          <li>Большой опыт работы с препроцессорами LESS, SСSS (5+ лет);</li>
           <li>
-            Способен настроить Gulp, Parcel, Webpack и скрипты в npm/yarn, почти
-            не матерясь;
+            Способен настроить Gulp, Parcel, Webpack, Vite и скрипты в npm/yarn,
+            почти не матерясь;
           </li>
           <li>Стараюсь оптимизировать Frontend для более быстрой загрузки.</li>
         </ul>
@@ -66,9 +79,13 @@
           <li>На базовом уровне владею PHP, MySQL, шаблонизатором Smarty;</li>
           <li>Знаком с основами NodeJs;</li>
           <li>
+            Могу настроить базовые пайплайны CI/CD для Vue.js 2/3 и Nuxt 2/3;
+          </li>
+          <li>
             На базовом уровне знаком со следующими CMS: Wordpress, Joomla,
             Drupal, Bitrix, Netcat, Diafan.
           </li>
+          <li>Знаком на базовом уровне с Headless CMS: Directus, Strapi.</li>
         </ul>
       </div>
 
@@ -87,8 +104,8 @@
         <h2>Другие навыки</h2>
         <ul>
           <li>
-            Много читаю, имею опыт в менторстве, постоянно учусь сам и могу
-            обучать других;
+            Много читаю, имею опыт в менторстве, постоянно учусь сам и могу (а
+            главное люблю) обучать других;
           </li>
           <li>Стараюсь посещать профильные и не только конференции, митапы.</li>
           <li>Внимателен к мелочам в своем и чужом коде;</li>
@@ -125,6 +142,7 @@ onMounted(() => {
 .about {
   font-size: 18px;
 }
+
 .about a {
   font-weight: 500;
   color: var(--primary);
@@ -157,10 +175,12 @@ onMounted(() => {
 .about__exp + .about__exp {
   margin-top: 40px;
 }
+
 @media (max-width: 640px) {
   .about {
     font-size: 16px;
   }
+
   .about h2 {
     font-size: 18px;
   }
